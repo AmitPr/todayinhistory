@@ -1,7 +1,13 @@
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=.8">
+    <meta name="author" content="Amit Prasad">
+    <meta name="description" content="Today In History shows important historical events from today!">
+    <title>Today In History</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="fetch.js"></script>
@@ -10,11 +16,11 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163814120-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-163814120-1');
+        gtag('config', 'UA-163814120-1');
     </script>
 
 </head>
@@ -34,7 +40,9 @@
     <div class='content'>
         <div class='head'>
             <h2 class='year'></h2>
-            <a class='refresh' onclick='refreshFact()'><h2>Another</h2></a>
+            <a class='refresh' onclick='refreshFact()'>
+                <h2>Another</h2>
+            </a>
         </div>
         <h1 class='event'></h1>
         <p>Made with 🗿 — Amit Prasad</p>

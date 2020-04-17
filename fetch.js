@@ -2,9 +2,6 @@ facts = []
 const d = new Date()
 const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 today = monthNames[d.getMonth()] +' ' + d.getDate()
-date = document.getElementsByClassName("date")[0]
-date.innerHTML = today
-date.href='https://en.wikipedia.org/wiki/' + monthNames[d.getMonth()]+'_'+d.getDate()+'#Events'
 $.getJSON('https://en.wikipedia.org/api/rest_v1/page/mobile-sections/'+ monthNames[d.getMonth()] + '_' + d.getDate() , function (data) {
     id = [-1]
     inside = false
@@ -40,3 +37,8 @@ function refreshFact() {
     evt = document.getElementsByClassName("event")[0]
     evt.innerHTML = fact[1]
 }
+$(document).ready(function () {
+    date = document.getElementsByClassName("date")[0]
+    date.innerHTML = today
+    date.href='https://en.wikipedia.org/wiki/' + monthNames[d.getMonth()]+'_'+d.getDate()+'#Events'
+})

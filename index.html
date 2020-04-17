@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=.8">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="fetch.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163814120-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-163814120-1');
+    </script>
+
+</head>
+
+<body>
+    <div class='nav'>
+        <span class='title'>
+            <h1>Today In History</h1>
+            <h2><a href='' class='date'></a></h2>
+        </span>
+        <div class='links'>
+            <a href='https://www.github.com'>
+                <img alt='Source Code' src='github.png'>
+            </a>
+        </div>
+    </div>
+    <div class='content'>
+        <div class='head'>
+            <h2 class='year'></h2>
+            <a class='refresh' onclick='refreshFact()'><h2>Another</h2></a>
+        </div>
+        <h1 class='event'></h1>
+        <p>Made with 🗿 — Amit Prasad</p>
+    </div>
+</body>
+
+</html>

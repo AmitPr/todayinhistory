@@ -1,0 +1,68 @@
+*{
+	padding:0;
+	margin:0;
+}
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+body{
+	width: 100%;
+	background-color: #16161D;
+}
+h1,h2{
+	color: #FFFFFF;
+	font-family: 'Baloo Tamma 2', cursive;
+    font-variant: small-caps;
+}
+h2{
+	font-weight: 700;
+	display: inline;
+}
+h1{
+	font-weight: 400;
+	line-height: 1;
+}
+p{
+    color: rgb(100, 100, 100);
+	font-family: 'Baloo Tamma 2', cursive;
+}
+.nav{
+    width: 98vw;
+    margin: 1vh 1vw;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.nav img{
+	height: 100%;
+}
+.links{
+	float: right;
+	height: 2.5rem;
+}
+@media(min-width:500px){
+	.nav h1{
+	    display: inline;
+    }
+    .content{
+        width: 50%;
+        margin: 5vh auto 5vh auto;
+    }
+}
+.nav h1{
+	font-size: 3rem;
+	font-weight: 700;
+}
+.nav h2{
+	font-weight: 400;
+}
+.head a{
+    float: right;
+}
+.refresh{
+    user-select: none;
+    transition: transform .2s;
+}
+.refresh:hover {
+    transform: scale(1.2);
+  }

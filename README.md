@@ -1,4 +1,4 @@
-# Today In History
+# [Today In History](http://todayinhistory.in)
 Today In History was a short coding project, scraping wikipedia for unique events that occured on that day, and showing a random one to the user. All information is courtesy of [Wikipedia](http://www.wikipedia.org)!
 ## How It works
 Using jQuery's [getJSON](https://api.jquery.com/jQuery.getJSON/) function, and the wikipedia [REST API](https://en.wikipedia.org/api/rest_v1/), a JSON object is obtained, containing the wikipedia page for the day. For example, if today were to be January 1, then the JSON would be retrieved from:
